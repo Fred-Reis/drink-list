@@ -57,16 +57,16 @@ function Details() {
         {item.preparation && (
           <View>
             <Text style={styles.cardText}>Preparation:</Text>
-            <ScrollView>
+            <ScrollView style={styles.scrollItem}>
               <Text>{item.preparation}</Text>
             </ScrollView>
           </View>
         )}
 
-        {item.ingredients && (
+        {item.ingredients.length > 0 && (
           <View>
             <Text style={styles.cardText}>Ingredients:</Text>
-            <ScrollView>
+            <ScrollView style={styles.scrollItem}>
               {item.ingredients.map(ing => {
                 return ing.special ? (
                   <Text key={ing.ingredient}>Special: {ing.special}</Text>

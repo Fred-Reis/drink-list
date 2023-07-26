@@ -39,10 +39,17 @@ const styles = StyleSheet.create({
     borderRadius: 4,
   },
 
+  scrollItem: {
+    marginBottom: 10,
+    textAlign: 'left',
+    padding: 5,
+  },
+
   cardRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
+    marginBottom: 10,
   },
 
   cardText: {
